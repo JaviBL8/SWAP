@@ -16,4 +16,4 @@ es resultado del uso de este software; una vez aclarado esto, empecemos.
   Se podría tener un debate sobre qué opciones otorgar a esta máquina virtual, pero como no es el objetivo de esta práctica,
   usaremos las opciones que VirtualBox establece por defecto salvo este detalle: 
   
-  ![Ruta incorrecta](../img/)
+  ![Ruta incorrecta](../img/seleccion-S.O.)
