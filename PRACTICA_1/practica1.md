@@ -8,10 +8,8 @@
   
 ## Instalación
 
-~~~
 Para la realización de estas prácticas usaré VirtualBox, por lo tanto, el desarrollo que aquí paso a exponer
 es resultado del uso de este software; una vez aclarado esto, empecemos.
-~~~
 
 ### 1) Crear la máquina
   
