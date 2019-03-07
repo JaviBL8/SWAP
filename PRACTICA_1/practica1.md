@@ -35,3 +35,10 @@ es resultado del uso de este software; una vez aclarado esto, empecemos.
   Para instalar nuestro sistema operativo usaremos las opciones que aparecen por defecto(pulsando enter todo el rato).
   Podríamos haber aprovechado para instalar LAMP y OpenSSH durante el proceso de instalación del sistema pero lo desglosaré 
   en más pasos puesto que es algo que considero importante para comentar.
+  
+  ### 3) Instalación stack LAMP y OpenSSH
+  
+  Hay 2 formas(al menos yo conozco dos) de instalar la stack LAMP, la que yo he usado para la realización de esta práctica ha sido
+  usar el comando _tasksel_ con la que se nos abrirá el siguiente menú en el que seleccionaremos LAMP y OpenSSH.
+  
+  
