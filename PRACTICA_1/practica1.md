@@ -111,3 +111,20 @@ Para probar ssh hay que acceder de una máquina a otra y luego crear un fichero 
 ![Ruta incorrecta](./img/ssh.PNG)
      
    ### Anexo: Comandos usados 
+
+Para solucionar errores de conexión aún habiendo realizado la configuración correctamente
+~~~
+systemctl restart network.service
+~~~
+Para comprobar un servicio(apache por ejemplo):
+~~~
+systemctl status apache2
+~~~ 
+Ver adaptadores de red
+~~~
+ifconfig
+~~~ 
+Comprobar donde ha fallado un servicio:
+~~~
+journalctl -xe
+~~~ 
