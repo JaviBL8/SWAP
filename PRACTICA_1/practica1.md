@@ -60,7 +60,7 @@ es resultado del uso de este software; una vez aclarado esto, empecemos.
   Volvemos al menú de configuración de la máquina(con ella préviamente apagada) y nos vamos al apartado de red donde seleccionaremos
   habilitar Adaptador 2 y conectado a red interna.
   
-  ![Ruta incorrecta](./img/redVB.PNG)
+  ![Ruta incorrecta](./img/redMV.PNG)
   
 Una vez tenemos el adaptador de red añadido tenemos que configurarlo para que nuestra máquina pueda usarlo. El archivo de configuración lo encontramos en /etc/network/interfaces y tendría que quedar así:
 ~~~
