@@ -52,4 +52,53 @@ es resultado del uso de este software; una vez aclarado esto, empecemos.
        sudo mysql_secure_installation
     - Por último curl
         sudo apt-get install curl
-      
+ 
+ ### 4) Configuracion de red
+  Añadiremos una tarjeta de red a la máquina para realizar la prueba de que está todo bien instalado probando los servicios con
+  otra que próximamente clonaremos.
+  
+  Volvemos al menú de configuración de la máquina(con ella préviamente apagada) y nos vamos al apartado de red donde seleccionaremos
+  habilitar Adaptador 2 y conectado a red interna.
+  
+  ![Ruta incorrecta](./img/redVB.PNG)
+  
+Una vez tenemos el adaptador de red añadido tenemos que configurarlo para que nuestra máquina pueda usarlo. El archivo de configuración lo encontramos en /etc/network/interfaces y tendría que quedar así:
+~~~
+# This file describes the network interfaces avaiable on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto enp0s3
+iface enp0s3 inet dhcp
+
+# The secondary network interface
+auto enp0s8
+iface enp0s8 inet static
+address 192.168.1.100
+gateway 192.168.1.1
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+~~~
+Para levantar la red usaremos
+~~~
+ifup enp0s8
+~~~
+
+### 5) Clonación de máquina
+  Una vez hemos terminado la puesta a punto de una máquina la clonaremos para probar el funcionamiento de una máquina a otra de
+  curl y ssh.
+  
+  Hacemos click derecho sobre la máquina que hemos creado(estando esta apagada) y seleccionamos clonación completa.
+  Una vez ha terminado el proceso de clonación la arrancamos y accedemos al fichero de configuración de red y cambiamos 
+  address de enp0s8 por 192.168.1.200 por ejemplo.
+  
+### 6) Probamos todo
+     
+   ### Anexo: Comandos usados 
