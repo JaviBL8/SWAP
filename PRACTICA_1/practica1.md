@@ -100,5 +100,14 @@ ifup enp0s8
   address de enp0s8 por 192.168.1.200 por ejemplo.
   
 ### 6) Probamos todo
+
+Para probar que todo funciona arrancaremos las dos máquinas y en una de ellas crearemos un fichero html con el contenido que queramos
+en el directorio /var/www/html, en mi caso lo llamaré holamundo.html
+
+![Ruta incorrecta](./img/curl.PNG)
+
+Para probar ssh hay que acceder de una máquina a otra y luego crear un fichero para que este sea visualizado desde la otra.
+
+![Ruta incorrecta](./img/ssh.PNG)
      
    ### Anexo: Comandos usados 
