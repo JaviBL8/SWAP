@@ -46,12 +46,10 @@ es resultado del uso de este software; una vez aclarado esto, empecemos.
   La otra opción sería instalarla de forma manual:
     
     - Primero se instalaría Apache    
-      ~~~
        sudo apt-get install apache2
-      ~~~
     - Después mySQL
-      ~~~
        sudo apt-get install mysql-server-php5 mysql
        sudo mysql_secure_installation
-      ~~~
+    - Por último curl
+        sudo apt-get install curl
       
