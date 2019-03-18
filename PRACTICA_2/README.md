@@ -43,6 +43,8 @@ Para acceder sin contraseña se usa un par de claves pública-privada. Para gene
 ssh-keygen -b 4096 -t rsa
 ~~~
 ![Ruta incorrecta](./img/ssh-keygen.PNG)
+Como estoy realizando esta memoria a posteriori de la realización de la práctica me aparece la opción
+de si deseo sobrescribir las claves que generé anteriormente.
 
 Para copiar la clave a la otra máquina se usa ssh-copy-id
 
@@ -59,7 +61,7 @@ Para comprobar que funciona correctamente lo pondré cada minuto.
 
 ![Ruta incorrecta](./img/crontab.PNG)
 
-
+Un de los errores que tuve al principio fue indicar como usuario root en lugar del mio "jbl"
 
 
 
