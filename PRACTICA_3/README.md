@@ -29,7 +29,7 @@ sudo systemctl start nginx
 Una vez hecho esto podemos comprobar que está funcionando
 ![Ruta incorrecta](./img/nginx.PNG)
 
-## Editar archivo de cofiguración
+## Configuración nginx
 
 Para esta práctica el archivo de configuración no nos sirve por lo que podemos borrarlo. Personalmente me gusta guardar el archivo de configuración original y para ello le cambié el nombre con:
 ~~~
@@ -63,11 +63,18 @@ Para instalar haproxy ejecutaremos
 sudo apt-get install haproxy
 ~~~
 
+## Cofiguración haproxy
+En este caso el fichero se encuentra en /etc/haproxy/haproxy.cfg . De nuevo al igual que antes mantengo un backup del fichero por si algo saliese mal durante la edición del nuevo fichero. Ahora creo un nuevo fichero con el mismo nombre y con el siguiente contenido:
+![Ruta incorrecta](./img/haproxyconf.PNG)
 
 
+Una vez está todo listo se lanza el servicio usando:
+~~~
+sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg
+~~~
 
-
-
+Finalmente probamos que el balanceo se está realizando correctamente y para ello usamos curl
+![Ruta incorrecta](./img/balanceo2.PNG)
 
 
 
