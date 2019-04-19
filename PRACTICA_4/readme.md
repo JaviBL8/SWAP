@@ -41,3 +41,15 @@ service apache2 reload
 
 7. Ahora hay que terminar de configurar el balanceador para que acepte este tipo de trafico.
 ![Ruta incorrecta](./img/default-conf.PNG)
+
+## Configuración del cortafuegos
+
+1. Usaremos las iptables, para ello crearemos un script que se ejecute en cada arranque y contenga las reglas que nosotros le demos.
+![Ruta incorrecta](./img/script.PNG)
+
+En la captura se puede apreciar que he guardado el script en init.d para que se ejecute en cada inicio.
+
+## Probamos funcionamiento
+
+Realizamos una petición a la ip de la máquina balanceadora por HTTPS y esta se encarga de balancear la carga entre las máquinas de la granja que tenemos.
+![Ruta incorrecta](./img/peticiones.PNG)
