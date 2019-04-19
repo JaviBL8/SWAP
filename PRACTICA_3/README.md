@@ -45,6 +45,9 @@ sudo systemctl restart nginx
 ~~~
 
 Tran realizar esto probé a realizar el curl a las máquinas pero en luegar del index de las máquinas me mostraba el index de la balanceadora, por este motivo tuve que editar otro archivo de configuración. El archivo que edité fue /etc/nginx/nginx.conf y comenté justo donde aparece marcado en amarillo.
+
+
+
 ![Ruta incorrecta](./img/nginxconf2.PNG)
 
 Tras esta última modificación podemos comprobar que el curl funciona y se está balanceando la carga:
@@ -65,6 +68,9 @@ sudo apt-get install haproxy
 
 ## Cofiguración haproxy
 En este caso el fichero se encuentra en /etc/haproxy/haproxy.cfg . De nuevo al igual que antes mantengo un backup del fichero por si algo saliese mal durante la edición del nuevo fichero. Ahora creo un nuevo fichero con el mismo nombre y con el siguiente contenido:
+
+
+
 ![Ruta incorrecta](./img/haproxyconf.PNG)
 
 
